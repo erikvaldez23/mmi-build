@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css'; // Optional: We might replace or just delete it, let's keep it clean
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Services from './components/Services';
+import ServicesNoImage from './components/ServicesNoImage';
 import Bio from './components/Bio';
 import MissionValues from './components/MissionValues';
 import LeadForm from './components/LeadForm';
@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Services />
+        <ServicesNoImage />
         <Bio />
         <MissionValues />
         <LeadForm />

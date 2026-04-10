@@ -1,0 +1,225 @@
+/* ─── Services No Image Component - Minimal List Stack ──────────────────────── */
+
+.services-ni-section {
+  background-color: var(--black);
+}
+
+/* Header block */
+.services-ni-hdr {
+  padding: 6rem 0 5rem;
+  background-color: var(--black);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.svc-ni-hdr-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: end;
+}
+
+.svc-ni-hdr-title {
+  color: var(--white);
+  grid-column: 1;
+  margin-top: 1.5rem;
+  line-height: 0.9;
+}
+
+.svc-ni-hdr-sub {
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.45);
+  max-width: 380px;
+  align-self: end;
+  padding-bottom: 0.25rem;
+}
+
+/* ─── Vertical Stack List ─── */
+.svc-ni-list-wrapper {
+  padding: 6rem 0;
+  background-color: var(--white);
+}
+
+.svc-ni-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── Service Row Minimal ─── */
+.svc-ni-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4rem;
+  padding: 4rem 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  background: transparent;
+  color: var(--black);
+  transition: background-color 0.4s ease, padding-left 0.4s ease;
+}
+
+.svc-ni-row:first-child {
+  border-top: 1px solid rgba(0,0,0,0.12);
+}
+
+.svc-ni-row:hover {
+  background: var(--off-white);
+  padding-left: 2rem;
+}
+
+/* Row Number */
+.svc-ni-row-num {
+  font-family: var(--font-display);
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 0.8;
+  opacity: 0.15;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  padding-top: 0.5rem;
+}
+
+.svc-ni-row:hover .svc-ni-row-num {
+  opacity: 0.3;
+  transform: scale(1.05);
+}
+
+/* Row Content Layout */
+.svc-ni-row-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr auto;
+  gap: 3rem;
+  align-items: center;
+}
+
+.svc-ni-row-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.svc-ni-tag {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.svc-ni-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.svc-ni-desc {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  max-width: 500px;
+  color: var(--gray-3);
+}
+
+/* CTA Button */
+.svc-ni-row-action {
+  justify-self: end;
+}
+
+.svc-ni-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border: 1px solid var(--black);
+  border-radius: 50px;
+  color: var(--black);
+  transition: background-color 0.3s ease, color 0.3s ease, gap 0.3s ease;
+}
+
+.svc-ni-cta svg {
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.svc-ni-cta:hover {
+  background-color: var(--black);
+  color: var(--white);
+  gap: 1rem;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1200px) {
+  .svc-ni-row {
+    padding: 3.5rem 0;
+    gap: 3rem;
+  }
+  
+  .svc-ni-row:hover {
+    padding-left: 1rem;  
+  }
+  
+  .svc-ni-row-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 2rem;
+  }
+  
+  .svc-ni-row-action {
+    grid-column: 1 / -1;
+    justify-self: start;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .svc-ni-hdr-inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .svc-ni-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 0;
+  }
+  
+  .svc-ni-row-num {
+    font-size: 3.5rem;
+    padding-top: 0;
+  }
+  
+  .svc-ni-row-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .svc-ni-row { padding: 2rem 0; }
+  
+  .services-ni-hdr {
+    padding: 4rem 0 3rem;
+  }
+  
+  .svc-ni-list-wrapper {
+    padding: 4rem 0;
+  }
+  
+  .svc-ni-title {
+    font-size: 2rem;
+  }
+  
+  .svc-ni-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}
