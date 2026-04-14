@@ -40,8 +40,8 @@ const LeadForm = () => {
             </div>
             <div className="lf-rule" />
             <div className="lf-contact-row">
-              <span className="lf-contact-label">Response</span>
-              <span>Within 24 hours</span>
+              {/* <span className="lf-contact-label">Response</span> */}
+              {/* <span>Within 24 hours</span> */}
             </div>
           </div>
         </div>

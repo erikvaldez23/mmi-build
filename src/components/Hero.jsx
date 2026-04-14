@@ -5,11 +5,11 @@ const Hero = () => (
   <section className="hero" id="hero">
     {/* Full-viewport background image */}
     <div className="hero-bg" aria-hidden="true">
-      <img
+      {/* <img
         src="https://images.unsplash.com/photo-1504307651254-35680f356f12?q=80&w=2070&auto=format&fit=crop"
         alt=""
         className="hero-bg-img"
-      />
+      /> */}
       <div className="hero-bg-dim" />
     </div>
 
