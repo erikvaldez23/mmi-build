@@ -26,8 +26,7 @@ const Hero = () => (
 
       <div className="hero-bottom">
         <p className="body-lg hero-tagline">
-          Trusted Construction &amp; Building Services.<br />
-          Quality craftsmanship from start to finish.
+          Delivering dependable construction and restoration services designed for lasting quality, performance, and peace of mind.
         </p>
         <div className="hero-actions">
           <a href="#contact" className="btn btn-light btn-arrow">

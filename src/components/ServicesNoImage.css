@@ -55,16 +55,10 @@
   border-bottom: 1px solid rgba(0,0,0,0.12);
   background: transparent;
   color: var(--black);
-  transition: background-color 0.4s ease, padding-left 0.4s ease;
 }
 
 .svc-ni-row:first-child {
   border-top: 1px solid rgba(0,0,0,0.12);
-}
-
-.svc-ni-row:hover {
-  background: var(--off-white);
-  padding-left: 2rem;
 }
 
 /* Row Number */
@@ -74,13 +68,7 @@
   font-weight: 800;
   line-height: 0.8;
   opacity: 0.15;
-  transition: opacity 0.4s ease, transform 0.4s ease;
   padding-top: 0.5rem;
-}
-
-.svc-ni-row:hover .svc-ni-row-num {
-  opacity: 0.3;
-  transform: scale(1.05);
 }
 
 /* Row Content Layout */
@@ -161,10 +149,6 @@
   .svc-ni-row {
     padding: 3.5rem 0;
     gap: 3rem;
-  }
-  
-  .svc-ni-row:hover {
-    padding-left: 1rem;  
   }
   
   .svc-ni-row-content {

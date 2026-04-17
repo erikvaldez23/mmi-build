@@ -33,7 +33,7 @@ const Bio = () => (
             At MMI, we believe no two projects are the same. We take a tailored approach to every job — providing customized construction, remodeling, and building service solutions that fit the specific needs of our clients. Whether it's general contracting, drywall, framing, insulation, or project management, our team delivers quality craftsmanship from start to finish.
           </p>
           <p>
-            What sets us apart is our commitment to bringing a small-business level of service and accountability to the Dallas construction industry. Strong relationships, clear communication, and attention to detail make all the difference.
+            What sets us apart is our commitment to bringing a small-business level of service and accountability to the DFW construction industry. Strong relationships, clear communication, and attention to detail make all the difference.
           </p>
         </div>
 

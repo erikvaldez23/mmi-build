@@ -53,7 +53,7 @@ const Navbar = () => {
           </nav>
           <div className="overlay-footer">
             <span>Dallas, Texas</span>
-            <span>info@mmibuildingservices.com</span>
+            <span>info@mmi-build.com</span>
           </div>
         </div>
       </div>

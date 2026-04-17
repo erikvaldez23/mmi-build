@@ -18,8 +18,7 @@ const Footer = () => (
 
       <div className="footer-body">
         <p className="footer-tagline body-lg">
-          Trusted construction &amp; building services<br />
-          across Dallas and North Texas.
+          Trusted construction and building services across the DFW Metroplex.
         </p>
 
         <nav className="footer-nav">
@@ -32,7 +31,7 @@ const Footer = () => (
 
         <div className="footer-contact">
           <span>Dallas, Texas</span>
-          <a href="mailto:info@mmibuildingservices.com">info@mmibuildingservices.com</a>
+          <a href="mailto:info@mmi-build.com">info@mmi-build.com</a>
         </div>
       </div>
 

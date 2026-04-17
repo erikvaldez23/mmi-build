@@ -5,22 +5,22 @@ const values = [
   {
     num: '01',
     title: 'Integrity',
-    desc: 'Do the right thing — always. Honest communication and accountable results at every step.',
+    desc: 'We act with honesty and uphold the highest ethical standards.',
   },
   {
     num: '02',
     title: 'Excellence',
-    desc: 'Deliver first-class products and services. Quality craftsmanship is never optional.',
+    desc: 'We deliver high-quality products and services with a focus on continuous improvement.',
   },
   {
     num: '03',
     title: 'Ownership',
-    desc: 'Own our process and turn problems into solutions. No excuses — only accountability.',
+    desc: 'We take accountability and drive solutions to achieve results.',
   },
   {
     num: '04',
     title: 'Service',
-    desc: 'Serve our clients and community with purpose. We build relationships, not just structures.',
+    desc: 'We serve our clients and community with purpose and professionalism.',
   },
 ];
 

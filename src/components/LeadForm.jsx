@@ -26,7 +26,7 @@ const LeadForm = () => {
             <span className="section-label-text">Get In Touch</span>
           </div>
           <h2 className="display-lg lf-heading">
-            Let's Build<br />Something<br />Together
+            Let's Build<br />Together
           </h2>
           <div className="lf-contact-list">
             <div className="lf-contact-row">
@@ -36,12 +36,12 @@ const LeadForm = () => {
             <div className="lf-rule" />
             <div className="lf-contact-row">
               <span className="lf-contact-label">Email</span>
-              <a href="mailto:info@mmibuildingservices.com">info@mmibuildingservices.com</a>
+              <a href="mailto:infommi-build.com">info@mmi-build.com</a>
             </div>
             <div className="lf-rule" />
             <div className="lf-contact-row">
-              {/* <span className="lf-contact-label">Response</span> */}
-              {/* <span>Within 24 hours</span> */}
+              <span className="lf-contact-label">Response</span>
+              <span>24 - 48 hours</span>
             </div>
           </div>
         </div>
