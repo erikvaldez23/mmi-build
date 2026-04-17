@@ -16,7 +16,7 @@ const Hero = () => (
     {/* Content */}
     <div className="hero-body">
       <div className="hero-location">
-        <span className="section-label-text">Dallas, Texas</span>
+        <span className="section-label-text">Dallas/Fort Worth</span>
       </div>
 
       <h1 className="display-xl hero-headline">

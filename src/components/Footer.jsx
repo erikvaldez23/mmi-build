@@ -30,7 +30,7 @@ const Footer = () => (
         </nav>
 
         <div className="footer-contact">
-          <span>Dallas, Texas</span>
+          <span>Dallas/Fort Worth</span>
           <a href="mailto:info@mmi-build.com">info@mmi-build.com</a>
         </div>
       </div>
@@ -39,7 +39,7 @@ const Footer = () => (
 
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} MMI Building Services. All Rights Reserved.</span>
-        <span>Dallas, TX</span>
+        <span>Dallas/Fort Worth</span>
       </div>
     </div>
   </footer>

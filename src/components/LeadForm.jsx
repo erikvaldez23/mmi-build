@@ -31,7 +31,7 @@ const LeadForm = () => {
           <div className="lf-contact-list">
             <div className="lf-contact-row">
               <span className="lf-contact-label">Location</span>
-              <span>Dallas, Texas</span>
+              <span>Dallas/Fort Worth</span>
             </div>
             <div className="lf-rule" />
             <div className="lf-contact-row">

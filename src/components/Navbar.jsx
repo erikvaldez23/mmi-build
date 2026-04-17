@@ -52,7 +52,7 @@ const Navbar = () => {
             <a href="#contact" onClick={close}>Contact</a>
           </nav>
           <div className="overlay-footer">
-            <span>Dallas, Texas</span>
+            <span>Dallas/Fort Worth</span>
             <span>info@mmi-build.com</span>
           </div>
         </div>
