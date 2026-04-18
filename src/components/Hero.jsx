@@ -19,6 +19,12 @@ const Hero = () => (
         <span className="section-label-text">Dallas/Fort Worth</span>
       </div>
 
+      <img
+        src="/logo.png"
+        alt="MMI Building Services logo"
+        className="hero-logo"
+      />
+
       <h1 className="display-xl hero-headline">
         Solutions<br />
         Built to Last

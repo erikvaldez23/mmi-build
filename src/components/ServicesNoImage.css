@@ -187,6 +187,18 @@
   }
 }
 
+@media (max-width: 768px) {
+  .svc-ni-row-action {
+    justify-self: stretch;
+    width: 100%;
+  }
+
+  .svc-ni-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 540px) {
   .svc-ni-row { padding: 2rem 0; }
   
@@ -200,10 +212,5 @@
   
   .svc-ni-title {
     font-size: 2rem;
-  }
-  
-  .svc-ni-cta {
-    width: 100%;
-    justify-content: center;
   }
 }

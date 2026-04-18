@@ -167,6 +167,14 @@
   .lf-form-panel { padding: 3.5rem 2.5rem; }
 }
 
+@media (max-width: 768px) {
+  .lf-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 @media (max-width: 560px) {
   .lf-row { grid-template-columns: 1fr; }
 }

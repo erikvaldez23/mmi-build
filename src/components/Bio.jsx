@@ -7,7 +7,7 @@ const Bio = () => (
       {/* Left: image full-height */}
       <div className="bio-img-col">
         <img
-          src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop"
+          src="/skyline.png"
           alt="Modern construction building in DFW"
           className="bio-img"
         />
