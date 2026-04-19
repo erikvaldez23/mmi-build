@@ -57,13 +57,23 @@
   left: 2.5rem;
 }
 
+/* Header Container */
+.hero-header {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  gap: 1rem;
+}
+
 /* Logo */
 .hero-logo {
   display: block;
-  width: 380px;
+  width: clamp(200px, 30vw, 380px);
+  max-height: 25vh; /* Ensured logo shrinks when screen height is short */
   height: auto;
   object-fit: contain;
-  margin-bottom: 1.5rem;
+  object-position: left bottom; /* Forces the image to stay flush left and bottom when scaling */
+  margin: 0;
 }
 
 .hero-headline {

@@ -111,5 +111,44 @@
 
   .bio-img { height: 380px; min-height: unset; }
 
-  .bio-content-col { padding: 3.5rem 2.5rem; }
+  .bio-content-col {
+    padding: 3.5rem 1.5rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .bio-heading {
+    align-self: flex-start;
+    text-align: left;
+  }
+
+  .bio-rule {
+    margin-left: 0;
+    align-self: flex-start;
+  }
+
+  .bio-text {
+    text-align: left; /* Keep long paragraphs left-aligned for readability */
+    width: 100%;
+  }
+
+  .bio-meta {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .btn { 
+    align-self: stretch; 
+    text-align: center;
+    justify-content: center; 
+  }
+}
+
+@media (max-width: 480px) {
+  .bio-content-col {
+    padding: 2.5rem 1.25rem;
+  }
 }
