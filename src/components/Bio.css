@@ -124,6 +124,10 @@
     text-align: left;
   }
 
+  .section-label {
+    align-self: flex-start;
+  }
+
   .bio-rule {
     margin-left: 0;
     align-self: flex-start;
