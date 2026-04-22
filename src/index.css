@@ -22,6 +22,12 @@
   --dur: 0.55s;
 }
 
+@media (max-height: 480px) and (orientation: landscape) {
+  :root {
+    --nav-h: 0px;
+  }
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;

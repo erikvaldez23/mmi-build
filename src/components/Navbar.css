@@ -164,4 +164,71 @@
 @media (max-width: 640px) {
   .nav-cta { display: none; }
   .overlay-footer { flex-direction: column; gap: 0.5rem; }
+  
+  .nav-logo {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+  }
+  
+  .navbar.scrolled .nav-logo {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+}
+
+@media (max-height: 480px) and (orientation: landscape) {
+  .navbar:not(.menu-open) {
+    position: absolute;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    height: 0;
+  }
+
+  .navbar:not(.menu-open) .nav-logo,
+  .navbar:not(.menu-open) .nav-cta {
+    display: none;
+  }
+
+  /* Keep hamburger fixed so it's always accessible but without the bar background */
+  .navbar:not(.menu-open) .hamburger {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: rgba(0,0,0,0.5);
+    padding: 8px;
+    border-radius: 4px;
+    backdrop-filter: blur(4px);
+  }
+
+  /* Fix navigation overlay bleed in landscape */
+  .nav-overlay {
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  .nav-overlay.overlay-open {
+    visibility: visible;
+  }
+
+  .overlay-inner {
+    padding: 1.5rem 2.5rem;
+    justify-content: flex-start;
+    overflow-y: auto;
+  }
+
+  .overlay-nav a {
+    font-size: 2.5rem;
+    padding: 0.25rem 0;
+  }
+
+  .overlay-footer {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
 }

@@ -49,7 +49,7 @@ const Bio = () => (
           </div>
           <div className="bio-stat-div" />
           <div className="bio-stat">
-            <span className="bio-stat-num">4+</span>
+            <span className="bio-stat-num">Turnkey</span>
             <span className="bio-stat-label">Services</span>
           </div>
         </div>
