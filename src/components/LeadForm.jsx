@@ -3,17 +3,39 @@ import './LeadForm.css';
 
 const LeadForm = () => {
   const [formData, setFormData] = useState({ firstName: '', lastName: '', email: '', phone: '', message: '' });
-  const [sent, setSent] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    setSent(true);
-    setTimeout(() => {
-      setSent(false);
-      setFormData({ firstName: '', lastName: '', email: '', phone: '', message: '' });
-    }, 5000);
+    setIsSubmitting(true);
+    setError(null);
+
+    try {
+      const response = await fetch('http://localhost:3001/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setIsSuccess(true);
+        setFormData({ firstName: '', lastName: '', email: '', phone: '', message: '' });
+      } else {
+        const data = await response.json();
+        throw new Error(data.message || 'Failed to send message');
+      }
+    } catch (err) {
+      console.error('Submission error:', err);
+      setError('Something went wrong. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -48,14 +70,16 @@ const LeadForm = () => {
 
         {/* Right form panel */}
         <div className="lf-form-panel">
-          {sent ? (
+          {isSuccess ? (
             <div className="lf-success">
               <span className="lf-success-mark">✓</span>
               <h3>Message Received</h3>
               <p>Thank you for contacting MMI Building Services. We will be in touch shortly.</p>
+              <button className="btn btn-dark" onClick={() => setIsSuccess(false)} style={{ marginTop: '1rem' }}>Send Another</button>
             </div>
           ) : (
             <form className="lf-form" onSubmit={handleSubmit}>
+              {error && <div className="lf-error" style={{ color: 'red', marginBottom: '1rem' }}>{error}</div>}
               <div className="lf-row">
                 <div className="lf-field">
                   <label htmlFor="firstName">First Name</label>
@@ -80,7 +104,9 @@ const LeadForm = () => {
                 <label htmlFor="message">Message</label>
                 <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project..." value={formData.message} onChange={handleChange} />
               </div>
-              <button type="submit" className="btn btn-dark btn-arrow lf-btn">Send Message</button>
+              <button type="submit" className="btn btn-dark btn-arrow lf-btn" disabled={isSubmitting}>
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+              </button>
             </form>
           )}
         </div>
