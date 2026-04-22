@@ -15,7 +15,8 @@ const LeadForm = () => {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:3001/api/contact', {
+      // const response = await fetch('http://localhost:3001/api/contact', { // Local
+      const response = await fetch('https://mmi-build-naq5.onrender.com/api/contact', { // Production
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
