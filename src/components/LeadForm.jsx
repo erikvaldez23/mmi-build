@@ -15,8 +15,8 @@ const LeadForm = () => {
     setError(null);
 
     try {
-      // const response = await fetch('http://localhost:3001/api/contact', { // Local
-      const response = await fetch('https://mmi-build-naq5.onrender.com/api/contact', { // Production
+      const response = await fetch('http://localhost:3001/api/contact', { // Local
+        // const response = await fetch('https://mmi-build-naq5.onrender.com/api/contact', { // Production
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -59,7 +59,7 @@ const LeadForm = () => {
             <div className="lf-rule" />
             <div className="lf-contact-row">
               <span className="lf-contact-label">Email</span>
-              <a href="mailto:infommi-build.com">info@mmi-build.com</a>
+              <a href="mailto:info@mmi-build.com">info@mmi-build.com</a>
             </div>
             <div className="lf-rule" />
             <div className="lf-contact-row">

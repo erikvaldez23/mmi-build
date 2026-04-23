@@ -39,7 +39,8 @@ app.post('/api/contact', async (req, res) => {
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: 'erikkvaldez@gmail.com', // Recipient email as requested
+    to: process.env.RECIPIENT_EMAIL || 'mike@mmi-build.com',
+    replyTo: email, // This allows Mike to click 'Reply' and email the lead directly
     subject: `New Lead: ${firstName} ${lastName}`,
     html: `
             <h3>New Lead Form Submission</h3>
